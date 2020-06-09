@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" 
+    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <a href="" class="navbar-brand mx-auto">Spotify</a>
+    </nav>
+    <div class="row">
+      <div class="col-md-6 mt-4 text-center">
+        <table class="table table-striped">
+          <tr>
+          <th>ID</th>
+          <th>USUARIO</th>
+          <th>ÚLTIMA FECHA DE INGRESO</th>
+          <th>CANTIDAD DE INGRESOS</th>
+          </tr>
+          <% for (var i = 0; i < news.length; i ++) { %>
+            <tr>
+              <td><%= news[i].id_usr %></td>
+              <td><%= news[i].username %></td>
+              <td><%= news[i].fec_ingre %></td>
+              <td><%= news[i].cant_ingresos %></td>
+            </tr>
+          <% } %>
+
+        </table>
+
+      </div>
+
+    </div>
+</body>
+</html>
